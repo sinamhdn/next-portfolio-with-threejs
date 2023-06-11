@@ -2,13 +2,13 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
-import { DogSpinner, DogContainer } from './voxel-dog-loader'
+import { ModelSpinner, ModelContainer } from './model3d-loader'
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
 
-const VoxelDog = () => {
+const Model3dClass = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
@@ -74,7 +74,7 @@ const VoxelDog = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/dog.glb', {
+      loadGLTFModel(scene, '/terminal.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
@@ -122,8 +122,10 @@ const VoxelDog = () => {
   }, [renderer, handleWindowResize])
 
   return (
-    <DogContainer ref={refContainer}>{loading && <DogSpinner />}</DogContainer>
+    <ModelContainer ref={refContainer}>
+      {loading && <ModelSpinner />}
+    </ModelContainer>
   )
 }
 
-export default VoxelDog
+export default Model3dClass

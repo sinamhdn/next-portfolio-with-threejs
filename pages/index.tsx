@@ -18,9 +18,9 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
+
+import thumbJob from '../public/images/720x400.webp'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -37,15 +37,16 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        Nullam I&apos;eu sapien faucibus tortor placerat porttitor. Phasellus
+        nec rhoncus elit
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Sina Mohammadian
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Developer / Designer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -64,7 +65,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/200x200.webp"
               alt="Profile image"
               borderRadius="full"
               width="100%"
@@ -79,21 +80,20 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
+          Fusce sit amet lacus quis purus imperdiet faucibus ut non felis.
+          Vivamus dapibus, tellus vel fringilla accumsan, urna nisi venenatis
+          augue, sed consequat elit metus convallis augue. Integer sit amet dui
+          cursus, rhoncus mauris in, sodales libero. Mauris nisi ligula, porta
+          quis arcu dapibus, porta consequat nisl. Maecenas eget metus sed
+          ligula rutrum pellentesque vitae ut justo.{' '}
+          <NextLink href="/works/job1" passHref scroll={false}>
+            <Link>Job 01&nbsp;</Link>
           </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
+          Donec sit amet metus porta, accumsan augue ut, mollis risus.{' '}
+          <NextLink href="#" passHref>
+            <Link target="_blank">Donec sit amet&nbsp;</Link>
           </NextLink>
-          &quot; has more than 100k subscribers.
+          Nullam facilisis justo id metus interdum ornare. Aenean in nunc arcu.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -109,22 +109,20 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>1995</BioYear>
+          Quisque ut neque rhoncus, iaculis mi at, consectetur neque.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2018</BioYear>
+          Maecenas eget metus sed ligula rutrum pellentesque vitae ut justo
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2018</BioYear>
+          Quisque varius sem in massa luctus, sed luctus leo congue
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Works as a freelance
+          <BioYear>2019 to present</BioYear>
+          Suspendisse eu elit ornare magna malesuada lacinia
         </BioSection>
       </Section>
 
@@ -133,15 +131,15 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
+          Purus, Faucibus,{' '}
+          <Link href="#" target="_blank">
+            Quisque
           </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
+          , Himenaeos,{' '}
+          <Link href="#" target="_blank">
+            Imperdiet
           </Link>
-          , Leica, Machine Learning
+          , Volutpat, Aliquam fringilla
         </Paragraph>
       </Section>
 
@@ -151,65 +149,57 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="#" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @bibendum
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="#" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @inkdrop_app (English)
+                @bibendum
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="#" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @craftzdog (日本語)
+                @bibendum
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="#" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @craftzdog
+                @bibendum
               </Button>
             </Link>
           </ListItem>
         </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;100k subs)
+          <GridItem href="#" title="post1" thumbnail={thumbJob}>
+            Duis suscipit libero non quam facilisis interdum
           </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
+          <GridItem href="#" title="job1" thumbnail={thumbJob}>
+            Suspendisse feugiat, turpis ac pretium rhoncus
           </GridItem>
         </SimpleGrid>
 
