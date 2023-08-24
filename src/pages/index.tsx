@@ -21,7 +21,8 @@ import { GridItem } from "../components/grid-item";
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from "react-icons/io5";
 import Image from "next/image";
 
-import thumbJob from "../../public/placeholders/720x400.webp";
+import thumbJob from "../../public/placeholders/dummy_720x400_78909c_e64a19.webp";
+import thumbPost from "../../public/placeholders/dummy_720x400_78909c_d81b60.webp";
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop),
@@ -200,7 +201,7 @@ const Home = () => (
           <GridItem href="#" title="post1" thumbnail={thumbJob}>
             Duis suscipit libero non quam facilisis interdum
           </GridItem>
-          <GridItem href="#" title="job1" thumbnail={thumbJob}>
+          <GridItem href="#" title="job1" thumbnail={thumbPost}>
             Suspendisse feugiat, turpis ac pretium rhoncus
           </GridItem>
         </SimpleGrid>
