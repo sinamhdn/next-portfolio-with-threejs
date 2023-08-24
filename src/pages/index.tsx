@@ -66,7 +66,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/placeholders/200x200.webp"
+              src="/placeholders/dummy_200x200_212121_e53935.webp"
               alt="Profile image"
               borderRadius="full"
               width={100}
