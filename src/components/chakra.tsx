@@ -13,8 +13,7 @@ interface ChakraProps {
   children: ReactNode;
 }
 
-// @ts-ignore
-export default function Chakra({ cookies, children }: ChakraProps): void {
+export default function Chakra({ cookies, children }: ChakraProps) {
   const colorModeManager =
     typeof cookies === "string"
       ? cookieStorageManagerSSR(cookies)

@@ -1,3 +1,4 @@
+import { AppProps } from "next/app";
 import Layout from "../components/layouts/main";
 import Fonts from "../components/fonts";
 import { AnimatePresence } from "framer-motion";
@@ -7,8 +8,7 @@ if (typeof window !== "undefined") {
   window.history.scrollRestoration = "manual";
 }
 
-// @ts-ignore
-function Website({ Component, pageProps, router }) {
+function Website({ Component, pageProps, router }: AppProps) {
   return (
     <Chakra cookies={pageProps.cookies}>
       <Fonts />

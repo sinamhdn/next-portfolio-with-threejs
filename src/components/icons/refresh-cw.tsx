@@ -1,4 +1,4 @@
-const RefreshCWIcon = props => (
+const RefreshCWIcon = (props: any) => (
   <svg
     width={24}
     height={24}
@@ -15,6 +15,6 @@ const RefreshCWIcon = props => (
     <path d="M1 20L1 14 7 14" />
     <path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15" />
   </svg>
-)
+);
 
-export default RefreshCWIcon
+export default RefreshCWIcon;

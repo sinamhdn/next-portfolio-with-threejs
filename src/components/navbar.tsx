@@ -17,14 +17,6 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
 import { IoLogoGithub } from "react-icons/io5";
-// import { ReactNode } from "react";
-
-// interface LinkItemProps {
-//   href: string;
-//   path: string;
-//   target?: string;
-//   children: ReactNode;
-// }
 
 const LinkItem = ({ href, path, target, children, ...props }: any) => {
   const active = path === href;

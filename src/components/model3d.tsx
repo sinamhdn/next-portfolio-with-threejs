@@ -51,19 +51,12 @@ const Model3dClass = () => {
       renderer.outputColorSpace = THREE.SRGBColorSpace;
       container.appendChild(renderer.domElement);
       setRenderer(renderer);
-      // const canvasArray = Array.from(
-      //   container.querySelectorAll("canvas") as HTMLCollectionOf<HTMLElement>
-      // );
       const canvasArray = Array.from(container.querySelectorAll("canvas"));
       // console.log(container.querySelectorAll("canvas"));
       canvasArray[0].style.display = "block";
       if (canvasArray.length > 1) {
         canvasArray[1].style.display = "none";
       }
-      // console.log("container", container.children[1]);
-
-      // 640 -> 240
-      // 8   -> 6
       const scale = scH * 0.005 + 4.8;
       const camera = new THREE.OrthographicCamera(
         -scale,

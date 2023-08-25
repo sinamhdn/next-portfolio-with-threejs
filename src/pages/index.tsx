@@ -1,4 +1,3 @@
-// @ts-nocheck
 import NextLink from "next/link";
 import {
   Link,
